@@ -71,6 +71,7 @@ body, .app {
   left: 0;
   z-index: 5;
   display: flex;
+  background: white;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
 }
 .search-books-input-wrapper {
@@ -172,3 +173,23 @@ body, .app {
   text-align: center;
   font-size: 0.8em;
 }
+
+#search-terms {
+  font-size: 12px;
+  padding: 5px 10px;
+  background: green;
+  color: white;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#search-terms a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-books-input-wrapper {
+  background: white;
+}
+
+
