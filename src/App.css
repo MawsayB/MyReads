@@ -179,13 +179,7 @@ body, .app {
   padding: 5px 10px;
   background: green;
   color: white;
-  float: right;
   margin-bottom: 10px;
-}
-
-#search-terms a {
-  text-decoration: none;
-  color: white;
 }
 
 .search-books-input-wrapper {

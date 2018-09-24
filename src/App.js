@@ -3,6 +3,7 @@ import React from 'react';
 // import * as BooksAPI from './BooksAPI'
 import './App.css';
 import ListBook from './ListBook';
+import SearchTerms from './SearchTerms';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class BooksApp extends React.Component {
@@ -36,7 +37,8 @@ class BooksApp extends React.Component {
                 <div>
                   <input type="text" placeholder="Search by title or author" />
                   <hr />
-                  <div id="search-terms"><a href="https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md">Search Term Library</a></div>
+                  <div id="search-terms"><strong>Search Term Library</strong></div>
+                  <SearchTerms />
                 </div>
               </div>
             </div>
