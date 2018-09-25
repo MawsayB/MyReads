@@ -4,7 +4,7 @@ import React from 'react';
 import './App.css';
 import ListBook from './ListBook';
 import SearchTerms from './SearchTerms';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 class BooksApp extends React.Component {
   state = {
@@ -20,7 +20,6 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-      <Router>
         <Route exact path="/search" render={() => (
           <div className="search-books">
             <div className="search-books-bar">
@@ -46,12 +45,10 @@ class BooksApp extends React.Component {
               <ol className="books-grid"></ol>
             </div>
           </div>
-        )} /></Router>
-        <Router>
+        )} />
         <Route exact path="/" render={() => (
           <ListBook />
         )}/>
-        </Router>
       </div>
       )
     }

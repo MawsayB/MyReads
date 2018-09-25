@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class SearchTerms extends React.Component {
 
     render() {
