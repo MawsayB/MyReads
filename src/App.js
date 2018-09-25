@@ -34,7 +34,11 @@ class BooksApp extends React.Component {
                   you don't find a specific author or title. Every search is limited by search terms.
                 */}
                 <div>
-                  <input type="text" placeholder="Search by title or author" />
+                  <input type="text"
+                    placeholder="Search by title or author"
+                    value={query}
+                    onChange={(event) => this.updateQuery(event.target.value)}
+                  />
                   <hr />
                   <div id="search-terms"><strong>Search Term Library</strong></div>
                   <SearchTerms />
@@ -48,10 +52,10 @@ class BooksApp extends React.Component {
         )} />
         <Route exact path="/" render={() => (
           <ListBook />
-        )}/>
+        )} />
       </div>
-      )
-    }
+    )
   }
-  
-  export default BooksApp
+}
+
+export default BooksApp

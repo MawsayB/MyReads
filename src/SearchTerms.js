@@ -5,7 +5,7 @@ class SearchTerms extends React.Component {
     render() {
         return (
 
-            <div >
+            <div className="search-terms">
                 Android, Art, Artificial Intelligence, Astronomy, Austen,
                 Baseball, Basketball, Bhagat, Biography, Brief, Business,
                 Camus, Cervantes, Christie, Classics, Comics, Cook, Cricket,
