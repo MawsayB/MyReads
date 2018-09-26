@@ -6,7 +6,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class ListBook extends React.Component {
+class MainPage extends React.Component {
     render() {
         return (
             <div className="list-books">
@@ -172,4 +172,4 @@ class ListBook extends React.Component {
     }
 }
 /* jshint ignore:end */
-export default ListBook;
+export default MainPage;
