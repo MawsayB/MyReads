@@ -14,8 +14,8 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-        <MainPage />
-        {/* <SearchPage /> */}
+        {/* <MainPage /> */}
+        <SearchPage />
       </div>
     )
   }
@@ -23,5 +23,5 @@ class BooksApp extends React.Component {
 
 export default BooksApp;
 
-/* written with help from tutorial from Maeva:
-/* https://www.youtube.com/watch?v=i6L2jLHV9j8
+/* written with help from tutorial from Maeva: */
+/* https://www.youtube.com/watch?v=i6L2jLHV9j8 */
