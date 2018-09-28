@@ -51,33 +51,36 @@ class SearchPage extends React.Component {
 
               <hr />
               <div id="search-terms"><strong>Search Term Library</strong></div>
-              <SearchTerms />
+              <div>
+                <SearchTerms />
+              </div>
             </div>
           </div>
         </div>
         <div className="search-books-results">
-          {this.state.searchedBooks.map(searchedBook => {
-            let shelf = "none";
-
-            this.props.books.map(book => (
-              book.id === searchedBook.id ?
-              shelf = book.shelf :
-              ''
-            ));
-
-            return (
-              <li key={searchedBook.id}>
-                <Book
-                  book={searchedBook}
-                  moveShelf={this.props.moveShelf}
-                  currentShelf={shelf}
-                />
-              </li>
-            )
-          })
-          }
           <ol className="books-grid">
+            {
+              this.state.searchedBooks.map(searchedBook => {
+                let shelf = "none";
 
+                this.props.books.map(book => (
+                  book.id === searchedBook.id ?
+                    shelf = book.shelf :
+                    ''
+                ));
+
+                return (
+                  <li className="grid-book" key={searchedBook.id}>
+                    <Book
+                      book={searchedBook}
+                      moveShelf={this.props.moveShelf}
+                      currentShelf={shelf}
+                    />
+                  </li>
+
+                )
+              })
+            }
           </ol>
         </div>
       </div>
