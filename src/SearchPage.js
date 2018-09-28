@@ -60,6 +60,7 @@ class SearchPage extends React.Component {
             <li key={searchedBook.id}>
               <Book
                 book={searchedBook}
+                moveShelf={this.props.moveShelf}
               />
             </li>
           ))

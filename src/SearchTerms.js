@@ -17,7 +17,7 @@ class SearchTerms extends React.Component {
                         Painting * Philosophy * Photography * Poetry * Production * Programming *
                         React * Redux * River * Robotics * Rowling * Satire * Science Fiction *
                             Shakespeare * Singh * Swimming * Tale * Thrun * Time * Tolstoy * Travel *
-                            Ultimate * irtual Reality * Web Development * iOS
+                            Ultimate * Virtual Reality * Web Development * iOS
                             </div >
 
         )
