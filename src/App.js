@@ -22,7 +22,7 @@ class BooksApp extends React.Component {
     BooksAPI.update(book, shelf);
 
     BooksAPI.getAll().then((books) => {
-      this.setState({ books })
+      this.setState({ books: books })
     })
   }
 
